@@ -3,10 +3,10 @@ import student_data
 
 # print(student_data.students)
 students = student_data.students
-print(len(students))
-print(students[0]['Combo,Name'])
-print(students[0]['Email'][0])
-print(students[0]['Email'][1])
+# print(len(students))
+# print(students[4]['Combo,Name'])
+# print(students[4]['Email'][0])
+# print(students[4]['Email'][1])
 
 # for loops allow us to
 #iterate through the data
@@ -16,20 +16,22 @@ print(students[0]['Email'][1])
 #and printing the name and email of the students
 #we are also printing a line of underscores to separate the students
 #we are also printing a line of underscores to separate the students
-for student in students:
-    print(student['Combo,Name'])
-    print(student['Email'][0])
-    print(student['Email'][1])
-    print("_"*25)
+# for student in students:
+#    print(student['Combo,Name'])
+#    print(student['Email'][0])
+#    print(student['Email'][1])
+#    print(student['HR'])
+#    print(student['GL'])
+#    print("_"*25)
 
 
 # we are asking the user to input their name
 # then we are checking if the name is in the data
 # if the name is in the data we are printing the name and "this works"
-name = input("what is you name?") 
+id = int(input("what is you id number? "))
 for student in students:
-    if name == student['Combo,Name']:
-        print(student['Combo,Name'])
+    if id == student['CPSID']:
+        print(student['CPSID'])
         print("this works")
 
 
